@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button1"
+        android:layout_marginBottom="20dp"
+        android:text="button menyesuaikan isi teks "
+        android:elevation="0dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/button1"
+        android:id="@+id/button2"
+        android:text="button menyesuaikan lebar layout
+" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/button3"
+        android:background="@color/colorPrimary"
+        android:text="button dengan warna " />
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/button3"
+        android:id="@+id/button4"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/androidstudio"
+        android:textColor="@android:color/white"
+        android:onClick="intent2"
+        android:text="button dengan background " />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button4"
+        android:id="@+id/button5"
+        android:onClick="intent3"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@drawable/ic_info_outline_black_24dp"
+        android:text="Tentang Aplikasi " />
+
+</RelativeLayout>
